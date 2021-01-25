@@ -5,7 +5,7 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <!-- LOCAL LINKS -->
- <link rel="stylesheet" type="text/css" href="../port-css/style.css">
+ <link rel="stylesheet" type="text/css" href="port-css/style.css">
  <!-- EXTERNAL LINKS FONTS -->
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
@@ -21,11 +21,11 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Joshua Page</title>
 </head>
-<body class="scroll-bar-off">
+<body id="index" class="scroll-bar-off">
   <!-- NAV-BAR -->
-  <nav id="index" class="sticky">
+  <nav class="sticky">
     <ul class="main-nav">
-        <li class="icon"><a class="icon-font hvr-bounce-to-right" href="#index">JP</a></li>
+        <li class="icon"><a class="icon-font" href="#index">JP</a></li>
         <li class="hvr-grow"><a class="link-text" href="#about">About</a></li>
         <li class="hvr-grow"><a class="link-text" href="#projects">Projects</a></li>
         <li class="hvr-grow"><a class="link-text" href="#contact">Contact</a></li>
@@ -35,12 +35,6 @@
 <header class="parallax">
     <div class="name hvr-bounce-to-right"><span>J</span>oshua&nbsp;<span>P</span>age</div>
       <p class="sub-head hvr-bounce-to-left"><span>W</span>eb&nbsp;<span>D</span>eveloper</p>
-    <!-- PROGRAMMES -->
-   <div class="programme-icons">
-     <i class="fab fa-css3"></i>
-     <i class="fab fa-html5"></i>
-     <i class="fab fa-js"></i>
-   </div>
    <!-- SCROLL-->
    <div class="scroll animate__animated animate__bounce">
      <i class="fas fa-angle-double-down"></i>
@@ -48,11 +42,20 @@
      </div>
    </div>
   </header>
-<!-- ABOUT -->
-<section id="about" class="about-section">
+  <!-- ABOUT -->
+  <section id="about" class="bio-container hvr-radial-out">
+    <div class="image-icon">
+      <img src="../port-images/IMG_6572.jpeg">
+      <div class="image-text"><i>Hello...</i></div>
+    </div>
+     <div class="about-text-1">
+      <p>I'm a self taught developer and data analyst! I love building beutiful and responsive websites and applications.<br><br> I am looking to take on challenging projects with the aim to constantly improve my knowledge and skillset as I work. </p>
+    </div>
+  </section>
+<section class="about-section">
 	<div class="background about-cards">
-  <div class="about-text" data-aos="fade-right">
-		<i>I'm a self taught freelance developer!<br>In the world of programming we are all students, there are always new things to learn<br> my strengths are in html, css, and javascript</i>
+  <div class="about-text-2" data-aos="fade-right">
+		<p>Layouts should be intuitive and responsive across all platforms. I enjoy making websites come to life </p>
 	</div>
 	<div class="container" data-aos="fade-down">
   		<i class="fas fa-brain"></i>
@@ -79,6 +82,15 @@
   </div>
 </div>
 </div>
+<!-- PROGRAMMES -->
+<div class="about-text-3">
+  <p>I built this website with no frameworks, using purely html css and javascript. In the world of programming we are all students and there are always new things to learn</p>
+</div>
+<div class="programme-icons">
+        <i class="fab fa-css3"></i>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-js"></i>
+      </div>
 </section>
 <!-- PROJECTS -->
 <main id="projects" class="parallax-2">
