@@ -85,11 +85,11 @@ header {
 	width: 100%;
     font-family: 'Montserrat', sans-serif;
     margin-top: 90px;
-    padding-top: 70px;
+    padding-top: 90px;
+
 }
 .parallax {
-  background-color: rgba(11, 132, 156, 0.4);
-  height: 150vh;
+  height: 80vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ header {
 	align-items: center;
 	justify-content: flex-start;
 	height: 65px;
-	margin: 0px -18px 50px 100px;
+	margin: 0px -18px 70px 100px;
 	padding-left: 10px;
 	border-radius: 25px;
 	background: black;
@@ -213,25 +213,8 @@ span {
 		background: black;
 	}
 }
-/*COVER-programme icons*/
-.programme-icons {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 150px;
-	font-size: 100px;
-	margin-bottom: 20px;
-	padding-top: 15px;
-	color: rgba(11, 132, 156, 0.4);
-	cursor: auto;
-}
-@media only screen and (max-width: 736px) {
-	.programme-icons {
-		font-size: 4em;
-		color: rgba(0, 235, 223, 0.65);
-	}
-}
 .scroll {
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -249,14 +232,89 @@ span {
 .animate__animated.animate__bounce {
 	animation-iteration-count: 100;
 }
+/*BIO*/
+.bio-container {
+	height: 170vh;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 132, 156, 0.6);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.image-icon {
+	height: 250px;
+	padding-top: 90px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.image-icon img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+.image-text {
+	margin: 10px;
+}
+.image-icon i {
+	color: white;
+}
+.about-text-1 {
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: 0px 20px 20px 20px;
+	color: white;
+}
 /*ABOUT*/
 .about-section {
 	height: 200vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	margin-top: -300px;
+	margin-top: -250px;
+	background-color: rgba(11, 132, 156, 0.6);
  }
 .background {
+	z-index: 10;
 	height: 120vh;
     background-size: cover;
     margin: 30px;
@@ -264,7 +322,6 @@ span {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; 
-
 }
 .about-cards {
 	display: grid;
@@ -300,7 +357,7 @@ span {
 	color: white;
 	height: 50px;
 }
-.about-text {
+.about-text-2 {
 	display: flex;
 	grid-row: span 2;
 	align-items: center;
@@ -327,6 +384,34 @@ span {
 		grid-column: span 2;
 	}
 }
+/*PROGRAMMES*/
+.about-text-3 {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.programme-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100px;
+	font-size: 100px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	color: rgba(11, 132, 156, 0.4);
+	background-color: linear-gradient(red, yellow);
+	cursor: auto;
+}
+@media only screen and (max-width: 736px) {
+	.programme-icons {
+		font-size: 4em;
+		color: rgba(0, 235, 223, 0.65);
+	}
+}
 /*MAIN-PROJECTS*/
 main {
     font-family: 'Montserrat', sans-serif;
@@ -336,7 +421,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
- 
 }
 .parallax-2 {
   background-image: url(../port-images/diego-ph-fIq0tET6llw-unsplash.jpg);
