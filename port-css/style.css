@@ -1,11 +1,13 @@
 html, body {
     margin: auto 0;
     padding: 0px;
+    width: 100%;
     min-height: 100vh;
     scroll-behavior: smooth;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255, 1);
     overflow: scroll;
+    overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
 .scroll-bar-off::-webkit-scrollbar {
@@ -17,12 +19,13 @@ nav {
 	align-items: center;
 	justify-content: center;
 	height: 15vh;
-	padding: 10px;
+	padding: 5px;
 }
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 99%;
+	width: 100%;
+	bottom: inherit;
 	z-index: 9999;
 }	
 ul {
@@ -31,7 +34,7 @@ ul {
 	grid-template-columns: 7% 30% 30% 30%;
 	height: 9vh;
 	padding-left: 0px;
-	margin: 5px 50px 5px 7px;
+	margin: 5px 0px 5px 7px;
 
 }
 li {
@@ -80,16 +83,24 @@ li {
 	border-radius: 25px;
 	text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+.link-text {
+	font-size: 1.2rem;
+}
+.icon-font {
+	font-size: 2rem;
+}
+}
 /*COVER*/
 header {
 	width: 100%;
     font-family: 'Montserrat', sans-serif;
     margin-top: 90px;
     padding-top: 90px;
-
 }
 .parallax {
   height: 80vh;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,9 +111,9 @@ header {
 	align-items: center;
 	justify-content: flex-start;
 	height: 65px;
-	margin: 0px -18px 70px 100px;
-	padding-left: 10px;
-	border-radius: 25px;
+	margin: 0px 0px 70px 100px;
+	padding-left: 15px;
+	border-radius: 25px 0px 0px 25px;
 	background: black;
 	font-size: 3em;
 	/*transition: all 1s ease;*/
@@ -152,10 +163,11 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin: 0px 100px 50px -18px;
-	padding-right: 40px;
+	margin: 0px 100px 50px 0px;
+	padding-right: 20px;
+	padding-left: 50px;
 	height: 65px;
-	border-radius: 25px;
+	border-radius: 0px 25px 25px 0px;
 	background-color: black;
 	color: white;
 	font-size: 4em;
@@ -212,6 +224,20 @@ span {
 		font-size: 30px;
 		background: black;
 	}
+	span {
+		font-size: 5rem;
+	}
+}
+@media only screen and (max-width: 403px) {
+.sub-head {
+	padding-left: 300px;
+}	
+.name {
+	margin-left: 0px;
+}
+span {
+	font-size: 4rem;
+}
 }
 .scroll {
 	height: 200px;
@@ -238,6 +264,8 @@ span {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
 }
 .hvr-radial-out {
   display: inline-block;
@@ -290,6 +318,9 @@ span {
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
+	-webkit-box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 3px 4px rgba(0, 0, 0, 0.4);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 3px 4px rgba(0, 0, 0, 0.4);  
 }
 .image-text {
 	margin: 10px;
@@ -297,29 +328,34 @@ span {
 .image-icon i {
 	color: white;
 }
-.about-text-1 {
-	font-size: 30px;
-	font-family: 'Montserrat', sans-serif;
+.bio-text-container {
+	display: flex;
+	margin: 0px 10px 10px 10px;
+	color: black;
+	padding: 10px 30px 10px 30px;
 	text-align: center;
-	margin: 0px 20px 20px 20px;
-	color: white;
+}
+.bio-text {
+	padding: 30px;
+	line-height: 50px;
 }
 /*ABOUT*/
 .about-section {
-	height: 200vh;
+	height: 220vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: -250px;
+	margin-top: -350px;
 	background-color: rgba(11, 132, 156, 0.6);
+	font-family: 'Montserrat', sans-serif;
+	
  }
 .background {
 	z-index: 10;
-	height: 120vh;
+	height: 100vh;
     background-size: cover;
     margin: 30px;
     border-radius: 25px;
-    font-family: 'Montserrat', sans-serif;
     background-color: white;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; 
 }
@@ -352,7 +388,7 @@ span {
 	margin-top: 10px;
 	padding: 0px 5px 0px 5px;
 	border-radius: 25px;
-	font-size: 30px;
+	font-size: 25px;
 	background-color: black;
 	color: white;
 	height: 50px;
@@ -364,7 +400,7 @@ span {
 	text-align: center;
 	justify-content: center;
 	line-height: 50px;
-	font-size: 35px;
+	font-size: 25px;
 	/*background: rgba(0, 0, 0, 0.5);*/
 	padding: 5px 0px 5px 5px;
 	margin: 140px 0px 140px 25px;
@@ -386,30 +422,51 @@ span {
 }
 /*PROGRAMMES*/
 .about-text-3 {
-	height: 50vh;
+	height: 20vh;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 70px 20px 20px 20px;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	font-size: 30px;
+	justify-content: center;
+	font-size: 5rem;
+	flex-wrap: wrap;
+	color: white;
 }
 .programme-icons {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-around;
-	height: 100px;
+	align-items: center;
+	height: 50vh;
 	font-size: 100px;
 	margin-bottom: 20px;
 	padding-top: 20px;
-	color: rgba(11, 132, 156, 0.4);
-	background-color: linear-gradient(red, yellow);
+	color: black;
 	cursor: auto;
+}
+.programme-icons-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	height: 25px;
+	margin-top: -5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.programme-icons i {
+	padding: 10px 20px 10px 20px;
+
+}
+.img-icons {
+	height: 100px;
+	width: 100px;
 }
 @media only screen and (max-width: 736px) {
 	.programme-icons {
 		font-size: 4em;
-		color: rgba(0, 235, 223, 0.65);
+		
 	}
 }
 /*MAIN-PROJECTS*/
@@ -421,6 +478,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 
 }
 .parallax-2 {
   background-image: url(../port-images/diego-ph-fIq0tET6llw-unsplash.jpg);
@@ -433,7 +491,6 @@ main {
 }
 .proj-title {
 font-size: 70px;
-height: 100px;
 margin: 30px;
 padding: 10px;
 text-align: center;
@@ -441,7 +498,6 @@ text-align: center;
 }
 .projects-container {
   height: 300px;
-  width: 100%;
   margin: 10px 10px 30px 10px;
   padding: 10px;
   display: flex;
