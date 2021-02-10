@@ -99,7 +99,7 @@ header {
     padding-top: 90px;
 }
 .parallax {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -260,7 +260,7 @@ span {
 }
 /*BIO*/
 .bio-container {
-	height: 170vh;
+	height: 150vh;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
@@ -341,11 +341,11 @@ span {
 }
 /*ABOUT*/
 .about-section {
-	height: 220vh;
+	height: 270vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: -350px;
+	margin-top: -400px;
 	background-color: rgba(11, 132, 156, 0.6);
 	font-family: 'Montserrat', sans-serif;
 	
@@ -473,21 +473,25 @@ span {
 main {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    height: 110vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 
 }
-.parallax-2 {
-  background-image: url(../port-images/diego-ph-fIq0tET6llw-unsplash.jpg);
-  height: 110vh;
+.proj-wrapper {
+ background-image: url(../port-images/diego-ph-fIq0tET6llw-unsplash.jpg);
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
+ width: 95%;
+  border-radius: 25px;
+  margin-top: -160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .proj-title {
 font-size: 70px;
@@ -553,7 +557,6 @@ text-align: center;
 
 /*FOOTER*/
 footer {
-	
 	height: 100vh;
 	/*background-image: url(../port-images/jon-tyson-QL0FAxaq2z0-unsplash.jpg);*/
 	background: :rgb(255, 255, 255, 1);
@@ -563,8 +566,56 @@ footer {
     position: relative;
     margin: 0;
 }
-.contact-section {
-	
+.contact-section { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	margin: 0;
+}
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+	margin-right: 90px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+.submit-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 120px;
 }
 .socials {
 	display: block;
