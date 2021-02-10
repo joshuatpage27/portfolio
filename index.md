@@ -5,7 +5,7 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <!-- LOCAL LINKS -->
- <link rel="stylesheet" type="text/css" href="../port-css/style.css">
+ <link rel="stylesheet" type="text/css" href="port-css/style.css">
  <!-- EXTERNAL LINKS FONTS -->
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
