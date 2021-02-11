@@ -339,6 +339,25 @@ span {
 	padding: 30px;
 	line-height: 50px;
 }
+@media only screen and (max-width: 744px) {
+	
+	.bio-container {
+		font-size: 1.2rem;
+		padding: 10px;
+	}
+	.image-icon {
+		margin-bottom: 0px;
+	}
+	.bio-text {
+		padding: 20px;
+		line-height: 30px;
+	}
+	.bio-text-container {
+		padding: 5px;
+		margin: 0;
+	}
+	
+}
 /*ABOUT*/
 .about-section {
 	height: 270vh;
@@ -387,13 +406,13 @@ span {
 	justify-content: center;
 	margin-top: 10px;
 	padding: 0px 5px 0px 5px;
-	border-radius: 25px;
+	border-radius: 4px;
 	font-size: 25px;
 	background-color: black;
 	color: white;
-	height: 50px;
+	height: 45px;
 }
-.about-text-2 {
+.about-text {
 	display: flex;
 	grid-row: span 2;
 	align-items: center;
@@ -409,15 +428,43 @@ span {
 @media only screen and (max-width: 959px) {
 	.about-text {
 		font-size: 1.5em;
+	}	
+	.container i {
+	font-size: 80px;
+
 	}
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 	.about-cards {
 		grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 	}
 	.about-text {
 		grid-column: span 2;
+		font-size: 1.2rem;
+		margin: 20px 20px 20px 20px;
+	}
+	.container {
+		padding-top: 0px;
+		margin-bottom: 60px;
+	    margin-top: 0px;
+	}
+	.container-4, .container-3 {
+		margin-bottom: 60px;
+		margin-top: 0px;
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.container i {
+		font-size: 50px;
+	}
+	.card {
+		font-size: 20px;
+		height: 30px;
+	}
+	.about-text {
+		line-height: 40px;
 	}
 }
 /*PROGRAMMES*/
@@ -554,6 +601,18 @@ text-align: center;
   left: 20px;
   top: 15px;
 }
+@media only screen and (max-width: 1035px) {
+	.proj-card {
+  height: 250px;
+  width: 200px;
+}
+}
+@media only screen and (max-width: 736px) {
+	.proj-card {
+  height: 180px;
+  width: 150px;
+}
+}
 
 /*FOOTER*/
 footer {
@@ -587,7 +646,7 @@ footer {
 	font-size: 1.4em;
 	margin: 0px 0px 10px 0px;
 	border: 2px solid #ccc;
-	border-radius: 25px;
+	border-radius: 4px;
 }
 
 #contact-area textarea {
@@ -595,12 +654,25 @@ footer {
 }
 
 #contact-area textarea:focus, #contact-area input:focus {
-	border: 2px solid #900;
+	outline: none;
+	border: 2px solid rgba(11, 132, 156, 0.6);
+	border-radius: 4px;
+}
+.submit-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #contact-area input.submit-button {
-	width: 100px;
-	float: right;
+	width: 200px;
+	transition-duration: 0.4s;
+	margin-left: 110px;
+	
+}
+.submit-button:hover {
+  background-color: rgba(11, 132, 156, 0.6);
+  color: white;
 }
 
 label {
@@ -610,12 +682,6 @@ label {
 	width: 100px;
 	padding-top: 5px;
 	font-size: 1.4em;
-}
-.submit-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 120px;
 }
 .socials {
 	display: block;

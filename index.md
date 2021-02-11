@@ -45,7 +45,7 @@
   <!-- ABOUT -->
   <section id="about" class="bio-container hvr-radial-out">
     <div class="image-icon">
-      <img src="port-images/AvatarMaker.svg">
+      <img src="port-images/AvatarMaker-josh.svg">
       <div class="image-text"><i>Hello...</i></div>
     </div>
      <div class="bio-text-container">
