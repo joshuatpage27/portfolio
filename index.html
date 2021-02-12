@@ -101,12 +101,14 @@
         </div>
         </i>
         <i class="fab fa-node"></i>
-        <img class="img-icons" src="port-images/mysql.png">
+        <i class="fab fa-bootstrap"></i>
+        <div class="prog-itext"><p>FLEX<br>BOX</p></div>
+        <div class="prog-itext"><p>CSS<br>GRID</p></div>
       </div>
 </section>
 <!-- PROJECTS -->
-<main id="projects" class="parallax-2">
-  <div class="proj-wrapper">
+<main>
+  <div id="projects" class="parallax-2 proj-wrapper">
 	<header class="proj-title">Projects</header>
 
 	<div class="projects-container">
@@ -129,18 +131,25 @@
  </div> 
 </main>
 <!-- CONTACT -->
- <footer id="contact">
+<footer id="contact">
   <div class="contact-section">
   	<h1>Contact</h1>
   <div id="contact-area">
       
      <form method="post" action="contactengine.php">
-        <label for="Email">Email:</label>
-        <input type="text" name="Email" id="Email" />
+
+        <div class="email">
+          <label for="Email">Email:</label><br>
+          <input type="text" name="Email" id="Email" />
+        </div>
         
-        <label for="Message">Message:</label><br />
-        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
-        <div class="submit-container"><input type="submit" name="submit" value="Send Message" class="submit-button" /></div>
+        <div class="message">
+          <label for="Message">Message:</label><br>
+          <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+        </div>
+        <div class="submit-container">
+          <input type="submit" name="submit" value="Send Message" class="submit-button" />
+        </div>
       </form>
    </div>
   </div>

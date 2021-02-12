@@ -483,7 +483,7 @@ span {
 .programme-icons {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 50vh;
 	font-size: 100px;
@@ -504,11 +504,25 @@ span {
 }
 .programme-icons i {
 	padding: 10px 20px 10px 20px;
+	margin: 20px;
 
 }
-.img-icons {
-	height: 100px;
-	width: 100px;
+}
+.prog-itext {
+	display: flex;
+	justify-content: center;
+	border: 3px solid black;
+	height: 200px;
+	width: 200px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	margin: 10px 20px 10px 20px;
+	
+}
+.prog-itext p {
+	margin: 0px;
 }
 @media only screen and (max-width: 736px) {
 	.programme-icons {
@@ -549,12 +563,12 @@ text-align: center;
 }
 .projects-container {
   height: 300px;
-  margin: 10px 10px 30px 10px;
+  margin: 10px 10px 30px 60px;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: 
+  flex-wrap: wrap;
 }
 
 .proj-card {
@@ -635,8 +649,11 @@ footer {
 }
 #contact-area {
 	width: 600px;
-	margin-top: 25px;
-	margin-right: 90px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #contact-area input, #contact-area textarea {
@@ -667,7 +684,6 @@ footer {
 #contact-area input.submit-button {
 	width: 200px;
 	transition-duration: 0.4s;
-	margin-left: 110px;
 	
 }
 .submit-button:hover {
@@ -676,13 +692,27 @@ footer {
 }
 
 label {
-	float: left;
 	text-align: right;
 	margin-right: 15px;
 	width: 100px;
-	padding-top: 5px;
+	padding-top: 10px;
 	font-size: 1.4em;
+
 }
+@media only screen and (max-width: 740px) {
+	#contact-area input, #contact-area textarea {
+		width: 300px;
+		font-size: 15px;
+	}
+	#contact-area input.submit-button{
+		font-size: 20px;
+		width: 190px;
+	}
+	label {
+		font-size: 20px;
+	}
+}
+/*SOCIALS*/
 .socials {
 	display: block;
 }
@@ -701,6 +731,11 @@ label {
 	font-size: 3em;
 	cursor: pointer;
 	color: black;
+}
+@media only screen and (max-width: 600px) {
+	.socials i {
+		font-size: 2.5em;
+	}
 }
 .copyright {
 	text-align: center;
