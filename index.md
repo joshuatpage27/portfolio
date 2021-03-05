@@ -49,7 +49,7 @@
       <div class="image-text"><i>Hello...</i></div>
     </div>
      <div class="bio-text-container">
-      <div class="bio-text">
+      <div class="bio-text" data-aos="fade-right">
       <i>"I'm a self taught web developer and designer! I love building beuatiful interactive websites and applications."</i>
     </div>
     <div class="bio-text">
