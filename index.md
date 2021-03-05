@@ -19,7 +19,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<title>Joshua Page</title>
+  <title>Joshua Page</title>
 </head>
 <body id="index" class="scroll-bar-off">
   <!-- NAV-BAR -->
@@ -52,21 +52,21 @@
       <div class="bio-text" data-aos="fade-right">
       <i>"I'm a self taught web developer and designer! I love building beuatiful interactive websites and applications."</i>
     </div>
-    <div class="bio-text">
+    <div class="bio-text" data-aos="fade-left">
       <i>"I'm looking to take on challenging projects with the aim to constantly improve my knowledge and skillset as I work."</i>
     </div>
   </div>
   </section>
 <section class="about-section">
-	<div class="background about-cards">
-  <div class="about-text-2" data-aos="fade-right">
-		<p>Layouts should be intuitive and responsive across all platforms. I enjoy making websites come to life but also have a passion for minimal and functional UX/UI. </p>
-	</div>
-	<div class="container" data-aos="fade-down">
-  		<i class="fas fa-brain"></i>
-  	<div class="card">
-    	<b>Intuitive</b>
-  	</div>
+  <div class="background about-cards">
+  <div class="about-text" data-aos="fade-right">
+    <p>Layouts should be intuitive and responsive across all platforms. I enjoy making websites come to life but also have a passion for minimal and functional UX/UI. </p>
+  </div>
+  <div class="container" data-aos="fade-down">
+      <i class="fas fa-brain"></i>
+    <div class="card">
+      <b>Intuitive</b>
+    </div>
 </div>
 <div class="container" data-aos="fade-down-left">
   <i class="fas fa-laptop-code"></i>
@@ -88,83 +88,105 @@
 </div>
 </div>
 <!-- PROGRAMMES -->
-<div class="about-text-3" data-aos="fade-down">
-  <p>Things I can use...</p>
-</div>
-<div class="programme-icons" data-aos="fade-up">
-        <i class="fab fa-css3"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-js"></i>
-        <i class="fab fa-react">
-      <div class="programme-icons-text">
-          <b>React</b>
+  <div class="programmes">
+    <div class="prog-header" data-aos="fade-down">
+     <h1>Things I can use...</hi>
+    </div>
+    <div class="programme-icons" data-aos="fade-up">
+      <div class="prog-itext"><p>FLEX<br>BOX</p></div>
+          <i class="fab fa-css3-alt">
+            <div class="programme-icons-text">
+                <b>CSS3</b>
+              </div>
+          </i>
+          <i class="fab fa-html5">
+            <div class="programme-icons-text">
+                <b>HTML5</b>
+              </div>
+          </i>
+          <i class="fab fa-js">
+            <div class="programme-icons-text">
+              <b>JavaScript</b>
+            </div>
+          </i>
+          <i class="fab fa-react">
+            <div class="programme-icons-text">
+              <b>React</b>
+            </div>
+          </i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-bootstrap">
+            <div class="programme-icons-text">
+              <b>Bootstrap</b>
+            </div>
+          </i>
+          <div class="prog-itext">
+            <p>CSS<br>GRID</p>
+          </div>
         </div>
-        </i>
-        <i class="fab fa-node"></i>
-        <img class="img-icons" src="port-images/mysql.png">
-      </div>
+  </div>
 </section>
 <!-- PROJECTS -->
-<main id="projects" class="parallax-2">
-  <div class="proj-wrapper">
-	<header class="proj-title">Projects</header>
+<main>
+  <div id="projects" class="parallax-2 proj-wrapper">
+  <header class="proj-title" data-aos="fade-down">Projects</header>
 
-	<div class="projects-container">
-  		<div class="proj-card vulpine">
-    		<h3 class="title">Vulpine Smile</h3>
-    	</div>
+  <div class="projects-container">
+      <a href="" class="proj-card vulpine">
+          <h3 class="title">Vulpine Smile</h3>
+      </a>
 
-  		<div class="proj-card within">
-    		<h3 class="title">Within Nutrition</h3>
-    	</div>
+      <a href="https://joshuatpage27.github.io/Within-Nutrition/" class="proj-card within">
+        <h3 class="title">Within Nutrition</h3>
+      </a>
 
-  		<div class="proj-card facial-rec">
-    		<h3 class="title">Facial Recognition</h3>
-    	</div>
+      <a href="https://joshuatpage27.github.io/portfolio/" class="proj-card facial-rec">
+        <h3 class="title">Facial Recognition</h3>
+      </a>
 
-  		<div class="proj-card app">
-    		<h3 class="title">App</h3>
-  		</div>
-	</div>
+      <a href="https://joshuatpage27.github.io/robofriends/" class="proj-card robo">
+        <h3 class="title">Robo Friends</h3>
+      </a>
+  </div>
  </div> 
 </main>
 <!-- CONTACT -->
- <footer id="contact">
+<footer id="contact">
   <div class="contact-section">
-  	<h1>Contact</h1>
+    <h1>Contact</h1>
   <div id="contact-area">
       
      <form method="post" action="contactengine.php">
-        <label for="Name">Name:</label>
-        <input type="text" name="Name" id="Name" />
+
+        <div class="email">
+          <label for="Email">Email:</label><br>
+          <input type="text" name="Email" id="Email" />
+        </div>
         
-        <label for="City">City:</label>
-        <input type="text" name="City" id="City" />
-  
-        <label for="Email">Email:</label>
-        <input type="text" name="Email" id="Email" />
-        
-        <label for="Message">Message:</label><br />
-        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
-        <div class="submit-button">
-        <input type="submit" name="submit" value="Submit" class="submit-button" /></div>
+        <div class="message">
+          <label for="Message">Message:</label><br>
+          <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+        </div>
+        <div class="submit-container">
+          <input type="submit" name="submit" value="Send Message" class="submit-button" />
+        </div>
       </form>
    </div>
   </div>
   <!-- FOOTER -->
    <div class="socials">
-   	<ul>
+    <ul>
      <li>
-      <a href="">
-        <i class="fab fa-facebook hvr-icon"></i></a>
+      <a href="https://www.facebook.com/josh.page.733">
+        <i class="fab fa-facebook hvr-icon hvr-grow"></i></a>
     </li>
     <li>
-      <a href="">
-        <i class="fab fa-instagram hvr-icon"></i></a>
+      <a href="https://www.linkedin.com/in/joshua-page-584874170">
+        <i class="fab fa-linkedin-in hvr-icon hvr-grow"></i></a>
     </li>
     <li>
-      <a href="">
-        <i class="fab fa-linkedin-in hvr-icon"></i></a>
+      <a href="https://github.com/joshuatpage27">
+        <i class="fab fa-github hvr-grow"></i></a>
     </li>
    </ul>
  </div>
